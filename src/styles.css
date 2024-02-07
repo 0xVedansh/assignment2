@@ -38,6 +38,17 @@
     justify-content: center;
   }
 
+  .text-edit {
+    font-weight: bold;
+    font-size: 27px;
+    margin: 20px 0px;
+  }
+
+  .text-edit1{
+    font-size: 19px;
+    background-color: #d4d7dc;
+  }
+
   .tab-item {
     cursor: pointer;
     padding: 10px 20px;
