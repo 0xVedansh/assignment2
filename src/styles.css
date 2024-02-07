@@ -1,0 +1,96 @@
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .tabs-container {
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .experience-title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .experience-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 2px;
+    background: linear-gradient(to right, seagreen, transparent, seagreen);
+  }
+
+  .tabs-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tab-item {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px 10px 0 0;
+    margin-right: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .tab-item:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05); /* Scale up the tab item on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Apply transition to the scale */
+  }
+
+  .tab-item.active {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .tab-item:hover .tab-title {
+    color: #007bff; /* Change text color on hover */
+  }
+
+  .tab-title {
+    transition: color 0.3s ease; /* Apply transition to text color change */
+  }
+
+  .tab-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+  }
+
+  .more-info-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .more-info-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .more-info-btn:hover {
+    background-color: #0056b3;
+  }
